@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ripCv"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ripLlItemRecycler"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/caja_producto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/ripvIvProducto"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.9"
+                        android:id="@+id/ripvTvNombre"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nombre_del_producto_item"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/ripvBtQuitar"
+                        android:background="@color/rojoFuerte"
+                        android:textColor="@color/blanco"
+                        android:text="@string/quitar"
+                        android:gravity="center"
+                        android:layout_weight="0.1"
+                        android:layout_width="5dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cantidad_titulo"
+                        />
+                    <TextView
+                        android:id="@+id/ripvTvPrecioTitulo"
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/precio_venta_item"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_soles"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/ripvEtCantidad"
+                        android:text="@string/cantidad_producto_item"
+
+                        tools:ignore="LabelFor" />
+                    <EditText
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/ripvEtPrecio"
+                        android:text="@string/cero_decimal_text"
+                        tools:ignore="LabelFor" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ripvTvPrecioTotal"
+                        android:text="@string/uno_decimal_item"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

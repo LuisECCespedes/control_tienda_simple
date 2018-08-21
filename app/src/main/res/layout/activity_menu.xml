@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_pr"
+    tools:context=".MenuActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <TableRow
+                android:background="#e8f5e9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/amImBtProducto"
+                    android:layout_weight="1"
+                    style="@style/ImageList"
+                    android:src="@drawable/ic_menu_producto"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/amImBttCliente"
+                    android:layout_weight="1"
+                    style="@style/ImageList"
+                    android:src="@drawable/ic_menu_cliente"
+                    android:contentDescription="@string/todo" />
+            </TableRow>
+
+            <TableRow
+                android:background="#e8f5e9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/amImBtVenta"
+                    android:layout_weight="1"
+                    style="@style/ImageList"
+                    android:src="@drawable/ic_menu_venta"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/amImBtVentaHistorial"
+                    android:layout_weight="1"
+                    style="@style/ImageList"
+                    android:src="@drawable/ic_menu_historial_venta"
+                    android:contentDescription="@string/todo" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

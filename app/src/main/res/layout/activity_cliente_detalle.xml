@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llClienteMantenimiento"
+    tools:context=".activity.ClienteDetalleActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="3dp"
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nombre_cliente">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/acdTietNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="3dp"
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descri_celular">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/acdTietCelular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="3dp"
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descri_email">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/acdTietEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="3dp"
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_descri_direccion">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/acdTietDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/acdLlAgregar"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/acdBtAgregar"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button_circle_agregar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/acdLlModificarEliminar"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/acdBtModificar"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button_circle_modificar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            tools:ignore="ButtonStyle" />
+
+                        <Button
+                            android:id="@+id/acdBtEliminar"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button_circle_eliminar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            tools:ignore="ButtonStyle" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

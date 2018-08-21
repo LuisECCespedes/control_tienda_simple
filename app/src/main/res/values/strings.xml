@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tienda simple</string>
+    <string name="password">Contraseña</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="shr_hint_passsword">Contraseña</string>
+    <string name="hint_buton_login">Ingresar</string>
+    <string name="todo">TODO</string>
+
+    <string name="cerrarSession">Cerrar Sessión</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hint_precio">Precio</string>
+    <string name="hint_nombre_del_producto">Nombre del Producto</string>
+    <string name="imagen_seleccione_descripcion">Seleccione una imagen para el producto</string>
+    <string name="hint_nombre_cliente">Nombre</string>
+    <string name="hint_descri_email">Email</string>
+    <string name="hint_descri_direccion">Dirección</string>
+    <string name="hint_descri_celular">Celular</string>
+    <string name="hint_cliente">Cliente</string>
+    <string name="hint_observacion">Observacion</string>
+    <string name="hint_total">Total</string>
+    <string name="cero_decimal_text">0.0</string>
+    <string name="hint_fecha_hora">Fecha y Hora</string>
+    <string name="hint_nombre_del_cliente">Nombre del Cliente</string>
+    <string name="hint_buscar_cliente">Buscar cliente</string>
+    <string name="hint_buscar_producto">Buscar producto</string>
+    <string name="nombre_del_producto_item">Nombre del producto</string>
+    <string name="producto_precio_titulo">Precio</string>
+    <string name="quitar">X</string>
+    <string name="hint_total_dos_puntos">Total:</string>
+    <string name="hint_fecha_hora_dos_puntos">Fecha Hora:</string>
+    <string name="descri_direcc">Dirección</string>
+    <string name="descri_celular">Celular</string>
+    <string name="descri_email">Email</string>
+    <string name="cantidad_titulo">Cantidad</string>
+    <string name="precio_venta_item">Venta S/.</string>
+    <string name="total_soles">Total S/.</string>
+    <string name="cantidad_producto_item">1</string>
+    <string name="uno_decimal_item">1.0</string>
+    <string name="hint_buscar">Buscar</string>
+</resources>
